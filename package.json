@@ -1,0 +1,18 @@
+{
+  "name": "semver-increment",
+  "version": "0.1.0",
+  "repository": {
+    "url": "ssh://github.com/weflex/semver-increment.git"
+  },
+  "main": "index.coffee",
+  "description": "",
+  "scripts": {},
+  "dependencies": {
+    "semver-utils": "1.1.1"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "5.0.0"
+  }
+}
