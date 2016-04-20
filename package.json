@@ -15,6 +15,7 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
+    "coffee": "3.2.1",
     "jasmine": "2.4.1",
     "jasmine-expect": "2.0.2"
   },
