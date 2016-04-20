@@ -4,14 +4,20 @@
   "repository": {
     "url": "ssh://github.com/weflex/semver-increment.git"
   },
-  "main": "index.coffee",
+  "main": "index.js",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "pretest": "PATH=$PATH:node_moduels/.bin coffee -cb spec/semver-spec.coffee",
+    "test": "PATH=$PATH:node_modules/.bin jasmine"
+  },
   "dependencies": {
     "semver-utils": "1.1.1"
   },
   "optionalDependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine": "2.4.1",
+    "jasmine-expect": "2.0.2"
+  },
   "engines": {
     "node": "5.0.0"
   }
