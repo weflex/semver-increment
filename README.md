@@ -1,5 +1,6 @@
 SemVer-Increment
 ====
+[![Build Status](https://travis-ci.org/weflex/semver-increment.svg?branch=master)](https://travis-ci.org/weflex/semver-increment)
 
 Handly library to bump Semantic Version numbers.
 
