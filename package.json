@@ -8,7 +8,7 @@
   "description": "",
   "scripts": {
     "pretest": "PATH=$PATH:node_moduels/.bin coffee -cb spec/semver-spec.coffee",
-    "test": "PATH=$PATH:node_modules/.bin jasmine"
+    "test": "PATH=$PATH:node_modules/.bin gulp specs"
   },
   "dependencies": {
     "semver-utils": "1.1.1"
@@ -16,8 +16,12 @@
   "optionalDependencies": {},
   "devDependencies": {
     "coffee-script": "1.10.0",
+    "gulp": "3.9.1",
+    "gulp-istanbul": "0.10.4",
+    "gulp-jasmine": "2.3.0",
     "jasmine": "2.4.1",
-    "jasmine-expect": "2.0.2"
+    "jasmine-expect": "2.0.2",
+    "jasmine-spec-reporter": "2.4.0"
   },
   "engines": {
     "node": "5.0.0"
