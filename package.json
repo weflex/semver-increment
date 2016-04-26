@@ -1,6 +1,6 @@
 {
   "name": "semver-increment",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": {
     "url": "ssh://github.com/weflex/semver-increment.git"
   },
