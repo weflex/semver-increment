@@ -4,17 +4,18 @@ const gulp = require('gulp');
 const jasmine = require('gulp-jasmine');
 const istanbul = require('gulp-istanbul');
 const SpecReporter = require('jasmine-spec-reporter');
+const coveralls = require('gulp-coveralls');
 
 let srcs = gulp.src('./index.js');
 let all = gulp.src('./spec/*.js');
 
-function buildCoverage(argument) {
+function buildCoverage() {
   return srcs
     .pipe(istanbul())
     .pipe(istanbul.hookRequire());
 }
 
-function runSpecs(argument) {
+function runSpecs() {
   let spec;
   let toJasmine = jasmine({
     reporter: new SpecReporter({
@@ -29,7 +30,9 @@ function runSpecs(argument) {
     }));
 
   return spec.on('end', function () {
-    process.exit(0);
+    if (process.env.NODE_ENV && process.env.NODE_ENV !== 'local') {
+      return gulp.src('./coverage/lcov.info').pipe(coveralls());
+    }
   }).on('error', function () {
     process.exit(1);
   });
