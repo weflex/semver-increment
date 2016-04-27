@@ -1,6 +1,10 @@
 {
   "name": "semver-increment",
   "version": "1.0.0",
+  "logo": {
+    "img": "https://avatars2.githubusercontent.com/u/12624675?v=3&s=200",
+    "url": "https://github.com/weflex/semver-increment"
+  },
   "repository": {
     "url": "ssh://github.com/weflex/semver-increment.git"
   },
@@ -8,7 +12,9 @@
   "description": "",
   "scripts": {
     "pretest": "PATH=$PATH:node_moduels/.bin coffee -cb spec/semver-spec.coffee",
-    "test": "PATH=$PATH:node_modules/.bin gulp specs"
+    "test": "PATH=$PATH:node_modules/.bin gulp specs",
+    "docs": "sh docs.sh",
+    "prepublish": "npm run docs"
   },
   "dependencies": {
     "semver-utils": "1.1.1"
@@ -26,5 +32,10 @@
   },
   "engines": {
     "node": "5.0.0"
+  },
+  "firedoc": {
+    "linkNatives": true,
+    "paths": "./",
+    "dest": "./docs"
   }
 }

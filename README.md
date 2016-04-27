@@ -35,6 +35,13 @@ Installation
 $ npm install semver-increment --save
 ```
 
+Generate Document
+----
+
+```
+npm run docs
+```
+
 LICENSE
 ----
 

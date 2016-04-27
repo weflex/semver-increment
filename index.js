@@ -7,15 +7,17 @@ var fs     = require('fs');
   * is an array composed of three digits, e.g. [0, 1, 0]. The topmost
   * (left-most) nonzero bit of SemVer number is bumped (incremented) and the
   * lower bits are set to zeros.
-  *
-  * @arguments
-  *   - masks: Array[Number]
-  *   - version: String
-  *
-  * @returns
-  *   String - SemVer String
-  */ 
+  * @class SemverIncrement
+  */
 
+ /**
+  * Call this function directly by requiring in Node.js runtime.
+  *
+  * @method main
+  * @param {Array} masks
+  * @param {String} version
+  * @return {String}
+  */ 
 module.exports = function (masks, version) {
   "use strict";
 
@@ -48,4 +50,4 @@ module.exports = function (masks, version) {
   }
 
   return newVersion.join('.');
-}
+};
