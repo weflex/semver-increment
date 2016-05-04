@@ -4,7 +4,6 @@ const gulp = require('gulp');
 const jasmine = require('gulp-jasmine');
 const istanbul = require('gulp-istanbul');
 const SpecReporter = require('jasmine-spec-reporter');
-const coveralls = require('gulp-coveralls');
 
 let srcs = gulp.src('./index.js');
 let all = gulp.src('./spec/*.js');
@@ -30,9 +29,7 @@ function runSpecs() {
     }));
 
   return spec.on('end', function () {
-    if (process.env.NODE_ENV && process.env.NODE_ENV !== 'local') {
-      return gulp.src('./coverage/lcov.info').pipe(coveralls());
-    }
+    process.exit(0);
   }).on('error', function () {
     process.exit(1);
   });

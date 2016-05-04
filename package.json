@@ -1,6 +1,6 @@
 {
   "name": "semver-increment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "logo": {
     "img": "https://avatars2.githubusercontent.com/u/12624675?v=3&s=200",
     "url": "https://github.com/weflex/semver-increment"
@@ -23,7 +23,6 @@
   "devDependencies": {
     "coffee-script": "1.10.0",
     "gulp": "3.9.1",
-    "gulp-coveralls": "0.1.4",
     "gulp-istanbul": "0.10.4",
     "gulp-jasmine": "2.3.0",
     "jasmine": "2.4.1",

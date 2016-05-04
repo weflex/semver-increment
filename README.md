@@ -1,7 +1,8 @@
 SemVer-Increment
 ====
 [![Build Status](https://travis-ci.org/weflex/semver-increment.svg?branch=master)](https://travis-ci.org/weflex/semver-increment)
-[![Coverage Status](https://coveralls.io/repos/github/weflex/semver-increment/badge.svg?branch=master&bust=1)](https://coveralls.io/github/weflex/semver-increment?branch=master)
+[![codecov](https://codecov.io/gh/weflex/semver-increment/branch/master/graph/badge.svg)](https://codecov.io/gh/weflex/semver-increment)
+
 
 Handly library to bump Semantic Version numbers.
 

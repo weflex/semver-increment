@@ -4,4 +4,6 @@ env:
 node_js:
   - "5"
   - "5.1"
-  - "iojs"
+after_script:
+  - npm install codecov
+  - ./node_modules/.bin/codecov
