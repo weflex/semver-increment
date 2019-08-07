@@ -30,7 +30,7 @@
     "jasmine-spec-reporter": "2.4.0"
   },
   "engines": {
-    "node": "5.0.0"
+    "node": ">=5.0.0"
   },
   "firedoc": {
     "linkNatives": true,

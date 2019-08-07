@@ -4,6 +4,10 @@ env:
 node_js:
   - "5"
   - "5.1"
+  - 11
+  - 10
+  - 8
+  - "10.15.0"
 after_script:
   - npm install codecov
   - ./node_modules/.bin/codecov
